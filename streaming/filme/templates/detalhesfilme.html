@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+ Detalhes
+{% endblock %}
+
+{% block content %}
+<div class="py-11">
+  <p> detalhes do filme: {{ object.titulo }}</p>
+    <p>{{ object }}</p>
+    <p>{{ object.descricao }}</p>
+    <img src="{{ object.thumb.url }}">
+
+
+</div>
+
+{% endblock %}
